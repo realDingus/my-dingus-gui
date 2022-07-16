@@ -1,0 +1,52 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local maingui = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+maingui.Name = "main gui"
+maingui.Parent = ScreenGui
+maingui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+maingui.Position = UDim2.new(0.281200647, 0, 0.271500856, 0)
+maingui.Size = UDim2.new(0, 668, 0, 305)
+maingui.active = true
+maingui.Draggable = true
+
+TextLabel.Parent = maingui
+TextLabel.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TextLabel.Size = UDim2.new(0, 668, 0, 23)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "dingus gui  | by real dingus#6354"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+printHI.Parent = "printHI"
+printHI.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+printHI.BorderSizePixel = 0
+printHI.Position = UDim2.new(0.0389221571, 0, 0.154098362, 0)
+printHI.Size = UDim2.new(0, 200, 0, 28)
+printHI.Font = Enum.Font.SourceSansBold
+printHI.Text = "Print text \"hi\""
+printHI.TextColor3 = Color3.fromRGB(255, 255, 255)
+printHI.TextSize = 14.000
+printHI,MouseButton1Down:connect(function)()
+      print ('hi')
+end)
+
+karllock.Parent = "karl lock"
+karllock.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+karllock.BorderSizePixel = 0
+karllock.Position = UDim2.new(0.661676645, 0, 0.154098362, 0)
+karllock.Size = UDim2.new(0, 200, 0, 28)
+karllock.Font = Enum.Font.SourceSansBold
+karllock.Text = "karl lock"
+karllock.TextColor3 = Color3.fromRGB(255, 255, 255)
+karllock.TextSize = 14.000
+printHI,MouseButton1Down:connect(function)()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/kar1l/karlslock/main/lua"))()
+end)
